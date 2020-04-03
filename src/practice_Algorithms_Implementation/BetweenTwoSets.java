@@ -11,7 +11,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class Between_Two_Sets {
+public class BetweenTwoSets {
 	public static int getTotalX(List<Integer> a, List<Integer> b) {
 		int finalCount = 0;
 		int lcm1 = findLCM(a);
