@@ -14,10 +14,10 @@ import static java.util.stream.Collectors.toList;
 public class Between_Two_Sets {
 	public static int getTotalX(List<Integer> a, List<Integer> b) {
 		int finalCount = 0;
-		int lcm = findLCM(a);
+		int lcm1 = findLCM(a);
 		int gcf = findGCF(b);
 
-		for(int i = lcm, j =2; i<=gcf; i=lcm*j,j++){
+		for(int i = lcm1, j =2; i<=gcf; i=lcm1*j,j++){
 			if(gcf%i==0){ finalCount++;}
 		}
 
