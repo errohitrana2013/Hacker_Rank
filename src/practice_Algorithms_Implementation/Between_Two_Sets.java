@@ -67,7 +67,7 @@ public class Between_Two_Sets {
 		numberList.add(b);
 		Integer maxNumber = Collections.max(numberList);
 		// int minNumber = Collections.max(numberList);
-		int gcf = 1;
+		int gcf1 = 1;
 		for (int i = maxNumber; i > 1; i--) { // taking max number for iterating loop
 			boolean check = false;
 			for (int j = 0; j < numberList.size(); j++) {
@@ -82,12 +82,12 @@ public class Between_Two_Sets {
 				for (int j = 0; j < numberList.size(); j++) {
 					numberList.set(j, numberList.get(j) / i);
 				}
-				gcf *= i;
+				gcf1 *= i;
 				maxNumber = Collections.max(numberList);
 			}
 		}
 
-		return gcf;
+		return gcf1;
 	}
 
 	public static void main(String[] args) throws IOException {
